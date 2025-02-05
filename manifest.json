@@ -1,0 +1,20 @@
+{
+  "name": "Shorts Blocker",
+  "version": "1.1",
+  "description": "Blocks YouTube Shorts, Instagram Reels, and TikTok videos.",
+  "manifest_version": 3,
+  "permissions": ["storage", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*", "*://*.instagram.com/*", "*://*.tiktok.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
