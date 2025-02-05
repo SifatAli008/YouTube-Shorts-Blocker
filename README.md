@@ -47,7 +47,6 @@ A lightweight Chrome extension that **removes YouTube Shorts** from the homepage
 
 ```plaintext
 YouTube-Shorts-Blocker
-├── icons/              # Extension icons
 ├── manifest.json       # Chrome Extension manifest
 ├── popup.html          # Extension popup UI
 ├── popup.js            # Handles toggle functionality
